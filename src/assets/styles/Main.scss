@@ -47,10 +47,19 @@
         margin-block-start: 0px;
         margin-block-end: 0px;
     }
+
+    .description {
+        font-size: 20px;
+        color: #E0E0E0;
+        margin-top: 10px;
+        font-weight: 500;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    }
 }
 
 .about-section .image-wrapper {
     z-index: 2;
+
     img {
         width: 150px;
         height: 150px;
@@ -67,9 +76,9 @@
 
 @media screen {
     @media (max-width: 567px) {
-        .nav-left{
+        .nav-left {
             padding-top: 20px;
-            float:left;
+            float: left;
         }
 
         .nav-left img {
@@ -77,14 +86,14 @@
         }
 
         .nav-right {
-            float:right;
+            float: right;
         }
 
         .nav-right li {
             padding: 10px 15px;
-            list-style:none;
-            font-size:13px;
-            color:white;
+            list-style: none;
+            font-size: 13px;
+            color: white;
             width: 10%;
         }
 
@@ -115,6 +124,10 @@
             text-align: left;
         }
 
+        .description {
+            text-align: left;
+        }
+
         .container {
             display: initial;
         }
@@ -129,7 +142,7 @@
             flex-direction: row;
             gap: 10px;
             color: white;
-    
+
             svg {
                 font-size: 1.8em;
             }
