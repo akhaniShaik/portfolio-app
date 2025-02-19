@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
 import emailjs from 'emailjs-com';
+import CustomSnackBar from './CustomSnackBar';
 
 function Contact() {
   // State for input fields
@@ -17,6 +18,16 @@ function Contact() {
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
 
+  // State for Snackbar notifications
+  const [snackbarOpen, setSnackbarOpen] = useState<boolean>(false);
+  const [snackbarMessage, setSnackbarMessage] = useState<string>("");
+  const [snackbarSeverity, setSnackbarSeverity] = useState<"success" | "error">("success");
+
+  // Function to close the Snackbar
+  const handleCloseSnackbar = () => {
+    setSnackbarOpen(false);
+  };
+
   // EmailJS function to send email
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -26,32 +37,34 @@ function Contact() {
       setNameError(!name.trim());
       setEmailError(!email.trim());
       setMessageError(!message.trim());
-      console.log('Validation failed: Please fill in all fields.');
+      // Show error snackbar for validation failure
+      setSnackbarMessage("Validation failed: Please fill in all fields.");
+      setSnackbarSeverity("error");
+      setSnackbarOpen(true);
       return;
     }
 
     // EmailJS Template Parameters
     const templateParams = {
-        to_name: "Akhani",
-        from_name: name,      // Sender's name
-        email: email,         // Sender's email (this was missing in the email body)
-        message: message,     // Message content
-      };
-    console.log('Sending email with params:', templateParams);
-    // const SERVICE_ID = "service_nuukn8s";
-    // const TEMPLATE_ID = "template_1wmn9w2";
-    // const PUBLICKEY = "3qnZ2CVF3noUqqZQ0";
+      to_name: "Akhani",
+      from_name: name,
+      email: email,
+      message: message,
+    };
 
-    emailjs.send(
-        process.env.REACT_APP_SERVICE_ID || '',   // Use environment variable
-        process.env.REACT_APP_TEMPLATE_ID || '',
+    emailjs
+      .send(
+        process.env.REACT_APP_SERVICE_ID || "",
+        process.env.REACT_APP_TEMPLATE_ID || "",
         templateParams,
-        process.env.REACT_APP_PUBLICKEY || ''
+        process.env.REACT_APP_PUBLICKEY || ""
       )
       .then(
         (response) => {
-          console.log('SUCCESS!', response.status, response.text);
-          alert('Email sent successfully!');
+          // Show success snackbar
+          setSnackbarMessage("Email sent successfully!");
+          setSnackbarSeverity("success");
+          setSnackbarOpen(true);
           // Clear form fields after successful email send
           setName('');
           setEmail('');
@@ -61,8 +74,11 @@ function Contact() {
           setMessageError(false);
         },
         (error) => {
-          console.error('FAILED...', error);
-          alert('Failed to send email. Please try again later.');
+          console.error("FAILED...", error);
+          // Show error snackbar for email failure
+          setSnackbarMessage("Failed to send email. Please try again later.");
+          setSnackbarSeverity("error");
+          setSnackbarOpen(true);
         }
       );
   };
@@ -120,6 +136,7 @@ function Contact() {
           </Box>
         </div>
       </div>
+      <CustomSnackBar open={snackbarOpen} message={snackbarMessage} severity={snackbarSeverity} onClose={handleCloseSnackbar} />
     </div>
   );
 }
