@@ -41,16 +41,6 @@ const labelsSecond = [
     "API Integration"
 ];
 
-const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
-];
-
 function Expertise() {
     return (
         <div className="container" id="expertise">
