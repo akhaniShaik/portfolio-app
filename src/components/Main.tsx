@@ -14,14 +14,17 @@ function Main() {
         </div>
         <div className="content">
           <div className="social_icons">
-            <a href="https://github.com/akhaniShaik/portfolio-app" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/akhani-shaik/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://github.com/akhaniShaik" target="_blank" rel="noreferrer"><GitHubIcon /></a>
+            <a href="https://www.linkedin.com/in/akhani-shaik/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
           </div>
           <h1>AKhani Shaik</h1>
           <p>Front-End Developer</p>
+          <p className="description">
+            Passionate about building scalable, user-friendly web applications with React.js, TypeScript, and modern front-end technologies.
+          </p>
           <div className="mobile_social_icons">
-            <a href="https://github.com/akhaniShaik" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/akhani-shaik/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://github.com/akhaniShaik" target="_blank" rel="noreferrer"><GitHubIcon /></a>
+            <a href="https://www.linkedin.com/in/akhani-shaik/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
           </div>
         </div>
       </div>
