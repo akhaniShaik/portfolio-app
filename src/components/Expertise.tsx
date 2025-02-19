@@ -28,7 +28,6 @@ const labelsSecond = [
     "Git",
     "GitHub Actions",
     "Docker",
-    "AWS",
     "Azure",
     "Jenkins",
     "SonarQube",
