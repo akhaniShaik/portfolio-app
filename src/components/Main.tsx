@@ -6,7 +6,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import '../assets/styles/Main.scss';
 import ProfilePhoto from '../assets/images/ProfilePhoto.jpg';
 
-const resumeUrl = "/Akhani_Resume_2025.pdf"; 
+const resumeUrl = "/Akhani_Shaik_Resume.pdf"; 
 
 function Main() {
 
