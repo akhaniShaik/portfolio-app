@@ -1,6 +1,6 @@
 # Portfolio🚀
 
-
+[Live DEMO](https://akhanishaikprotfolio.netlify.app/)
 ## Features
 
 ✅ Open source (free to use, no attribution required)  
