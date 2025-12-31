@@ -21,7 +21,7 @@ function Main() {
             <a href="https://github.com/akhaniShaik" target="_blank" rel="noreferrer"><GitHubIcon /></a>
             <a href="https://www.linkedin.com/in/akhani-shaik/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
           </div>
-          <h1>AKhani Shaik</h1>
+          <h1>Akhani Shaik</h1>
           <p>Front-End Developer</p>
           <Button
             variant="contained"
