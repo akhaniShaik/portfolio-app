@@ -63,8 +63,8 @@ function Expertise() {
 
                     <div className="skill">
                         <FontAwesomeIcon icon={faDocker} size="3x" />
-                        <h3>DevOps & Automation</h3>
-                        <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support successful Go-Live. I also work on test automation to ensure high-quality software releases.</p>
+                        <h3>Testing & CI/CD</h3>
+                        <p>I set up CI/CD pipelines and automated testing so front-end releases ship reliably, with code-quality checks and monitoring built in.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Tech stack:</span>
                             {labelsSecond.map((label, index) => (

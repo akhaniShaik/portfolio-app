@@ -22,7 +22,7 @@ function Main() {
             <a href="https://www.linkedin.com/in/akhani-shaik/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
           </div>
           <h1>Akhani Shaik</h1>
-          <p>Front-End Developer</p>
+          <p>Front-End Developer · 5+ years · React, Next.js, TypeScript</p>
           <Button
             variant="contained"
             startIcon={<DownloadIcon />}

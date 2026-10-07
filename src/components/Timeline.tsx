@@ -16,23 +16,41 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="Apr-2024 - present"
+            date="May-2025 - present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Apexon</h3>
-            <h4 className="vertical-timeline-element-subtitle">Engineer II</h4>
+            <h3 className="vertical-timeline-element-title">IQVIA</h3>
+            <h4 className="vertical-timeline-element-subtitle">Software Development Engineer 3 (SDE-3)</h4>
             <ul>
-              <li>Leading the development and enhancement of software functionality using React.js, Next.js, Redux (Saga), and TypeScript.</li>
-              <li>Implementing Server-Side Rendering (SSR) with Next.js to boost performance and SEO rankings.</li>
-              <li>Enhancing code quality and error management with SonarQube and real-time monitoring using Sentry.</li>
+              <li>Architected a centralised KPI Dashboard platform serving multiple business units in IQVIA's healthcare analytics suite.</li>
+              <li>Built role-based access control (RBAC) for granular permissions across user roles and dashboard modules.</li>
+              <li>Developed a Goals &amp; Targets page and multi-dimensional filters (date range, region, product, team) with trend comparisons.</li>
+              <li>Integrated Claude API and LangChain for AI-assisted insights and natural-language querying.</li>
+              <li>Led frontend architecture: component library, state management patterns, and API integration standards.</li>
             </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="Aug-2021 - Mar-2023"
+            date="Apr-2024 - May-2025"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Apexon</h3>
+            <h4 className="vertical-timeline-element-subtitle">Engineer II</h4>
+            <ul>
+              <li>Led the development and enhancement of software functionality using React.js, Next.js, Redux (Saga), and TypeScript.</li>
+              <li>Implemented Server-Side Rendering (SSR) with Next.js to boost performance and SEO rankings.</li>
+              <li>Enhanced code quality and error management with SonarQube and real-time monitoring using Sentry.</li>
+            </ul>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            date="Aug-2021 - Mar-2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
@@ -50,7 +68,7 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">ZinosEdge</h3>
+            <h3 className="vertical-timeline-element-title">ZiniosEdge</h3>
             <h4 className="vertical-timeline-element-subtitle">Software Engineer</h4>
             <ul>
               <li>Developed reusable React components to improve application efficiency and maintainability.</li>
